@@ -7,10 +7,9 @@
 }
 body{
     font-family: "Heebo", sans-serif;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
   font-style: normal;
-  width: 90%;
-  margin: auto;
+
 }
 .navbar{
     display: flex;
@@ -381,7 +380,7 @@ color:#888;
     margin: 20px 0;
   }
 }
-  
+ 
 .social-links{
     list-style: none;
   display: flex;
