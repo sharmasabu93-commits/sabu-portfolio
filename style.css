@@ -48,6 +48,10 @@ body{
   .navbar {
     display: flex;
   }
+  .navbar ul.active{
+    display: flex;
+    background-color: orchid;
+  }
 
   .menu-toggle {
     display: block;
@@ -435,17 +439,19 @@ color:#888;
   }
 }
 #scrollToTopBtn{
-    position: fixed;
-  bottom: 20px;
-  right: 20px;
+position: fixed; 
+  bottom: 30px; 
+  right:30px;
+ display: none;
   background-color: #ff6464;
   color:black;
   border: none;
   padding: 10px 15px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 18px;
-  z-index: 1000;
+  font-size: 24px;
+text-align: center;
+line-height: 1;
 }
 
  
