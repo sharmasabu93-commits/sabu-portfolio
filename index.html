@@ -15,12 +15,12 @@
 
 <body>
    <nav class="navbar">
-    <ul>
+    <ul  id="menu-toggle">
       <li><a href="#work">Work</a></li>
       <li><a href="#blog">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="menu-toggle" id="menu-toggle">
+    <div class="menu-toggle"onclick="toggleMenu()">
       ☰
     </div>
   </nav>
@@ -107,8 +107,8 @@
         <div class="contact-item">
           <div class="icon"><i class="fa-solid fa-location-dot" style="color: #63E6bE;"></i></div>
           <div class="detils">
-            <h3>Location</h3>
-            <p>Himachal Pradesh, India</p>
+            <h3>Address</h3>
+            <p> Palampur,Himachal Pradesh, India</p>
           </div>
           </div>
           <data class="contact-item">
@@ -128,10 +128,31 @@
         <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
         <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
       </div>
-      <p>&copy; 2024 John Doe. All rights reserved.</p>
-    </div>
+      <p>&copy; 2025  Savinder Sharma | All rights reserved.</p>
+      </div>
+      <div id="scrollToTopBtn">↑</div>
   </footer>
-  
+  <script>
+    const scrollBtn = document.getElementById("scrollToTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollBtn.style.display = "inline-block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    }
+    scrollBtn.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    function toggleMenu() {
+      document.getElementById("menu-toggle").classList.toggle("active");
+    }
+  </script>
+
+
 </body>
 
 </html> 

@@ -388,7 +388,7 @@ color:#888;
   max-width: 800px;
   margin: auto;
   padding: 30px;
-  background: beige;
+  background: #EDF7FA;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
@@ -420,11 +420,9 @@ color:#888;
 
 .contact-item .detils p,
 .contact-item .detils a {
-  margin: 5px 0 0 0;
-  color: #555;
+  margin: 10px 0 0 0;
   text-decoration: none;
-  word-break: break-word;
-}
+} 
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -435,6 +433,19 @@ color:#888;
   .contact-item .icon {
     margin-bottom: 8px;
   }
+}
+#scrollToTopBtn{
+    position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff6464;
+  color:black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1000;
 }
 
  
