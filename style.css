@@ -109,7 +109,13 @@ body {
   width: 243px;
   height: 243px;
 }
+.technical{
 
+   width: 100%;
+  padding: 6%;
+  background: #ffffff;
+ 
+}
 /* Responsive Hero */
 @media (max-width: 768px) {
   .hero {
@@ -136,38 +142,112 @@ body {
   }
 }
 
+.technical h1{
+ font-size: 2rem;
+  color: #0ea5a4;
+  margin-bottom: 10px;
+}
+.technical h2{
+   font-size: 1rem;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+
+.technical ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.technical li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.technical strong {
+  color: #0ea5a4;
+}        
+
+
+
+ @media (max-width: 768px) {
+  .technical {
+    padding: 30px 15px;
+    
+  }
+
+
+  .technical h1 {
+    font-size: 1.6rem;
+  }
+
+  .technical h2 {
+    font-size: 0.9rem;
+  }
+
+  .technical ul {
+    padding-left: 25px;
+  }
+
+  .technical li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .technical {
+    padding: 30px 15px;
+  }
+
+  .technical h1 {
+    font-size: 1.4rem;
+  }
+
+  .technical h2 {
+    font-size: 0.85rem;
+  }
+
+  .technical ul {
+    padding-left: 20px;
+  }
+
+  .technical li {
+    font-size: 0.9rem;
+  }
+} 
+
 /* Work Section */
 .post {
   background-color: #edf7fa;
   padding: 40px;
   font-family: Arial, sans-serif;
-  margin: 0px 20px;
+  
 }
-.recents {
+
+.recents2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  margin-top:-20px;
+  margin-top:30px;
 }
-.recents h1 {
+.recents2 h1 {
   font: 0.5em;
   margin-left: 9%;
   color: #21243d;
+  margin-top: 20px;
 }
-.recents p {
+.recents2 p {
   font-family: 0.9rem;
   color: #00a8cc;
   cursor: pointer;
   margin-top: 20px;
 }
-.cards {
+  .cards2 {
   display: flex;
   gap: 20px;
   margin: 0 auto;
   width: 1300px;
 }
-.card {
+.card2 {
   background-color: #f8f8f8;
   padding: 20px;
   border-radius: 10px;
@@ -177,19 +257,19 @@ body {
   overflow-wrap: break-word; 
 }
 
-.card h1 {
+.card2 h1 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 
 }
 
-.card h2 {
+.card2 h2 {
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 15px;
 }
 
-.card p {
+.card2 p {
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
@@ -197,13 +277,14 @@ body {
 }
 
 @media (max-width: 768px) {
-  .cards {
+  .cards2 {
     flex-direction: column;
     width: 100%;
     margin: auto;
+     padding: 24px 24px;
 
   }
-  .card {
+  .card2 {
     width: 100%;
   }
   .recents h1 {
@@ -211,6 +292,7 @@ body {
     text-align: center;
   }
 }
+
 
 /* Projects */
 .Featured-works {
